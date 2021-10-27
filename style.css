@@ -17,6 +17,13 @@ body{
   display: flex;
   flex-direction: column;
 }
+.form a{
+  color: var(--hospital-gree);
+  font-size: var(--sm);
+  text-decoration: none;
+  text-align: center;
+  margin-bottom: 52;
+}
 .form-contariner{
   display: grid;
   grid-template-rows: auto 1fr auto;
@@ -32,9 +39,9 @@ body{
   margin-bottom: 12px;
 }
 .label{
-font-size: var(--sm);
-font-weight: bold;
-margin-bottom: 4px;
+  font-size: var(--sm);
+  font-weight: bold;
+  margin-bottom: 4px;
 }
 .login{
   width: 100%;
@@ -113,3 +120,27 @@ margin-bottom: 4px;
   text-decoration: none;
 }
 /* End reset password */
+/* Login Screen */
+.input-email{
+  margin-bottom: 22px;
+}
+.secondary-button{
+  background-color: var(--white);
+  border-radius: 8px;
+  border: 1px solid var(--hospital-gree);
+  color: var(--hospital-gree);
+  width:100%;
+  cursor: pointer;
+  font-size: var(--md);
+  font-weight: bold;
+  height: 50px;
+}
+@media (max-width: 640px){
+  .logo{
+    display:block;
+  }
+  .secondary-button{
+    margin-top: 15vh;
+  }
+}
+/* End Login Screen */

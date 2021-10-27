@@ -82,3 +82,34 @@ margin-bottom: 4px;
   }
 }
 /* End Password */
+/* Screen reset password */
+.email-image{
+  align-items: center;
+  background-color: var(--text-input-field);
+  border-radius: 50%;
+  display: flex;
+  height: 132px;
+  justify-content: center;
+  width: 132px;
+  margin-bottom: 24px;
+}
+.email-image img{
+  width: 80px;
+}
+.contariner{
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  width: 300px;
+  justify-items: center;
+}
+.resend{
+  font-size: var(--sm);
+}
+.resend span{
+  color: var(--very-light-pink);
+}
+.resend a{
+  color: var(--hospital-gree);
+  text-decoration: none;
+}
+/* End reset password */

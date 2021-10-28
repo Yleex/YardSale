@@ -1,6 +1,6 @@
 :root{
-  --black: #000000;  
-  --hospital-gree: #ACD9B2;
+  --black: #000000;
+  --hospital-green: #ACD9B2;
   --text-input-field: #F7F7F7;
   --very-light-pink: #C7C7C7;
   --white: #FFFFFF;
@@ -18,7 +18,7 @@ body{
   flex-direction: column;
 }
 .form a{
-  color: var(--hospital-gree);
+  color: var(--hospital-green);
   font-size: var(--sm);
   text-decoration: none;
   text-align: center;
@@ -60,7 +60,7 @@ body{
   display: none;
 }
 .primary-button{
-  background-color: var(--hospital-gree);
+  background-color: var(--hospital-green);
   border-radius: 8px;
   border:none; 
   color: var(--white);
@@ -78,7 +78,7 @@ body{
   margin-bottom: 32px;
   text-align: center;
 }
-.tiitle{
+.tittle{
   font-size: var(--lg);
   margin-bottom: 12px;
   text-align: center;
@@ -116,7 +116,7 @@ body{
   color: var(--very-light-pink);
 }
 .resend a{
-  color: var(--hospital-gree);
+  color: var(--hospital-green);
   text-decoration: none;
 }
 /* End reset password */
@@ -127,8 +127,8 @@ body{
 .secondary-button{
   background-color: var(--white);
   border-radius: 8px;
-  border: 1px solid var(--hospital-gree);
-  color: var(--hospital-gree);
+  border: 1px solid var(--hospital-green);
+  color: var(--hospital-green);
   width:100%;
   cursor: pointer;
   font-size: var(--md);
@@ -143,10 +143,16 @@ body{
   .form-contariner{
     height: 100%;
   }
-  /* .login-button,
-  .secondary-button{
-    margin-top: 15vh;
-  } */
+  .cards-container{
+    grid-template-columns: repeat ( 140px);
+  }
+  .product-card{
+    width: 140px;
+  }
+  .product-card img{
+    width: 140px;
+    height: 140px;
+  }
 }
 /* End Login Screen */
 /* Screen New account */
@@ -212,16 +218,74 @@ body{
   margin-top: 0;
   margin-bottom: 0;
   color: var(--very-light-pink);
-@media (max-width: 640px){
-  .cards-container{
-    grid-template-columns: repeat ( 140px);
-  }
-  .product-card{
-    width: 140px;
-  }
-  .product-card img{
-    width: 140px;
-    height: 140px;
-  }
 }
 /* End */
+/* Menu Desktop */
+.desktop-menu{
+  border: 1px solid var(--very-light-pink);
+  border-radius: 6px;
+  height: auto;
+  padding: 20px 20px 0 20px;
+  width: 100px;
+}
+.desktop-menu ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.desktop-menu ul li{
+  text-align: end;
+}
+.desktop-menu ul li:nth-child(1),
+.desktop-menu ul li:nth-child(2){
+  font-weight: bold;
+}
+.desktop-menu ul li:last-child{
+  padding-top: 20px;
+  border-top: 1px solid var(--very-light-pink);
+}
+.desktop-menu ul li:last-child a{
+  color: var(--hospital-green);
+  font-size: var(--sm);
+}
+.desktop-menu ul li a{
+  color: var(--black);
+  text-decoration: none;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+/* End Desktop*/
+/* Menu Mobile */
+.mobile-menu{
+  padding: 24px;
+}
+.mobile-menu a{
+  text-decoration: none;
+  color: var(--black);
+  font-weight: bold;
+  /* margin-bottom: 24px; */
+}
+.mobile-menu ul{
+  padding: 0;
+  margin: 24px 0 0;
+  list-style: none;
+}
+.mobile-menu ul:nth-child(1){
+  border-bottom: 1px solid var(--very-light-pink);
+}
+.mobile-menu ul li{
+  margin-bottom: 24px;
+}
+/* .floor-menu{
+
+} */
+.email{
+  font-size: var(--sm);
+  font-weight: 300 !important;
+  color:var(--very-light-pink)}
+.sing-out{
+  color: var(--hospital-green) !important;
+  font-size: var(--sm);
+}
+/* End Menu Mobile */
